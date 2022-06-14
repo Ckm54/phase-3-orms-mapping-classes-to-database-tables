@@ -29,7 +29,6 @@ class Song
 
     # get song id from database and save it to instance's id attribute
     self.id = DB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0]
-
     # return the ruby instance
     self
 
